@@ -6,11 +6,11 @@ public class TestSwitchCase {
 		case 'A':
 			System.out.println("优秀");break;
 		case 'B':
-			System.out.println("优秀");break;
+			System.out.println("良好");break;
 		case 'C':
-			System.out.println("优秀");break;
+			System.out.println("良好");break;
 		case 'D':
-			System.out.println("优秀");break;
+			System.out.println("及格");break;
 		default:
 			System.out.println("未知等级");
 		}
