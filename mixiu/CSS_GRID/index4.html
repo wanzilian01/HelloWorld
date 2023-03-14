@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .wrapper {
+            display: grid;
+
+            grid-template-areas:
+                'header header header'
+                'content content sidebar'
+                'box1 box2 box3'
+                /* 'box3 box3 box3' */
+                'footer footer footer';
+            grid-gap: 1rem;
+
+
+
+        }
+
+        .header {
+            grid-area: header;
+            text-align: center;
+        }
+
+        .content {
+            grid-area: content;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .box1 {
+            grid-area: box1;
+        }
+
+        .box2 {
+            grid-area: box2;
+        }
+
+        .box3 {
+            grid-area: box3;
+        }
+
+        .footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        .header,
+        .content,
+        .sidebar,
+        .box1,
+        .box2,
+        .box3,
+        .footer {
+            border: 1px #ccc solid;
+            padding: 0.5rem;
+        }
+
+        @media (max-width:500px) {
+            .wrapper {
+                grid-template-areas:
+                    "header"
+                    "content" "sidebar" "box1" "box2" "box3" "footer"
+                ;
+
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>米修在线</h1>
+        </header>
+        <section class="content">
+            <h3>Hello World</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis harum, eum cum minus vero sint
+                minima qui quam, nesciunt facere explicabo ipsa maxime. Error quam hic ratione officia at.
+            </p>
+        </section>
+        <aside class="sidebar">
+            <h3>联系我们</h3>
+            <ul>
+                <li>米修在线</li>
+                <li>中国</li>
+                <li>米修在线</li>
+                <li>米修在线</li>
+            </ul>
+        </aside>
+
+        <div class="box1">Box1Lorem ip</div>
+        <div class="box2">Box2Lore.</div>
+        <div class="box3">Box3Lorem i</div>
+
+        <footer class="footer">
+            <p>Copyright &copy; 2021, 米修在线, All Rights Reserved </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

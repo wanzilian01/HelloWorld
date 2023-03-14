@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex align</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            display: flex;
+            background: #555;
+            flex-wrap: wrap;
+            /* 内容在主轴上的对齐 */
+            justify-content: space-evenly;
+             /* 项目对齐  */
+            /* justify-items: space-evenly;  */
+
+            height: 600px;
+            /* 内容在交叉轴上的对齐 */
+            /* align-content:stretch ; */
+            /* 项目对齐*/
+            align-items: flex-end; 
+        }
+
+        .item {
+            background: #f4f4f4;
+            border: #ccc solid 1px;
+            padding: 1rem;
+            text-align: center;
+            margin: 0.75rem;
+            flex-basis: 100px;
+        }
+        .item-2{
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item item-1">
+            <p3>Item 1</p3>
+        </div>
+        <div class="item item-2">
+            <p3>Item 2</p3>
+        </div>
+        <div class="item item-3">
+            <p3>Item 3</p3>
+        </div>
+        <!-- <div class="item item-4">
+            <p3>Item 4</p3>
+        </div>
+        <div class="item item-5">
+            <p3>Item 5</p3>
+        </div>
+        <div class="item item-6">
+            <p3>Item 6</p3>
+        </div>
+        <div class="item item-7">
+            <p3>Item 7</p3>
+        </div>
+        <div class="item item-8">
+            <p3>Item 8</p3>
+        </div> -->
+    </div>
+</body>
+
+</html>

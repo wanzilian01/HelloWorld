@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before & after</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #333;
+            color: #fff;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        header::before{
+            content: "";
+            background: url("../MS online/img/pexels.jpg") center center/cover;
+            opacity: 0.4;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+        }
+        header > h1{
+            font-size: 4rem;
+            margin: 1rem;
+        }
+
+        .is-required:after {
+            content: "*";
+            color: red;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <label class="is-required" for="name">姓名</label>
+    <input type="text"> -->
+    <header>
+        <h1>欢迎来到米修在线</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, eaque.</p>
+
+    </header>
+    <section>
+        <h3>Lorem ipsum dolor sit.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aut facilis beatae, molestiae illo at fugit,
+            voluptate facere dicta tempore accusamus quibusdam officiis dolorem necessitatibus.</p>
+    </section>
+</body>
+
+</html>

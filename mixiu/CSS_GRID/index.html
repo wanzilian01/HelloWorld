@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            grid-column-gap: 1rem;
+            grid-row-gap: 1rem;
+
+        }
+
+        .wrapper>div {
+            background-color: #eee;
+            padding: 1rem;
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background-color: #ddd;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi iusto ad assumenda maiores accusamus
+            obcaecati reiciendis ab quisquam? Necessitatibus provident perferendis nam officia eligendi neque inventore
+            facilis. Maxime, eum.
+
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi iusto ad assumenda maiores accusamus
+            obcaecati reiciendis ab quisquam? Necessitatibus provident perferendis nam officia eligendi neque inventore
+            facilis. Maxime, eum.
+
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi iusto ad assumenda maiores accusamus
+            obcaecati reiciendis ab quisquam? Necessitatibus provident perferendis nam officia eligendi neque inventore
+            facilis. Maxime, eum.
+
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi iusto ad assumenda maiores accusamus
+            obcaecati reiciendis ab quisquam? Necessitatibus provident perferendis nam officia eligendi neque inventore
+            facilis. Maxime, eum.
+
+        </div>
+    </div>
+</body>
+
+</html>

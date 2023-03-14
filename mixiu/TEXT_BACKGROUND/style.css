@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background: url("pexels.jpg") center center/cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+}
+.animated{
+    margin: 0;
+    padding: 0;
+    font-size: 5rem;
+    background:url("sc_20230304191341.png");
+    /* background-clip:text; */
+    -webkit-background-clip:text;
+    color: transparent;
+    /* animation: moveBg 3s linear infinite; */
+    -webkit-animation: moveBg 3s linear infinite;
+}
+@keyframes moveBg {
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+    
+}
+
